@@ -6,7 +6,7 @@ class ProgressDialog extends StatelessWidget {
   ProgressDialog({this.message});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) {           //IT GIVES US A BAR WHICH IS MADE HERE MANUALLY AND INSIDE IT WE HAVE A CIRCULAR PROGRESS INDICATOR TO SHOW THAT ITS PROCESSING
     return Dialog(
       backgroundColor: Colors.green,
       child: Container(

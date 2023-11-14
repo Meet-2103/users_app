@@ -5,5 +5,5 @@ import 'package:flutter/material.dart';
 import '../models/user_model.dart';
 
 final FirebaseAuth fAuth=FirebaseAuth.instance;
-User? currentFirebaseUser;
+User? currentFirebaseUser;                                               //IN THIS WHOLE PROJECT THESE ARE THE GLOBAL VARIABLES SO THIS WILL BE ACCESSED DIRECTLY FOR LOGIN PURPOSES
 UserModel ?userModelCurrentInfo;

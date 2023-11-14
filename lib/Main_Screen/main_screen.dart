@@ -33,7 +33,7 @@ class _MainScreenState extends State<MainScreen> {
   double searchLocationContainerHeight=260.0;      //height of the animmated bottom drawer
 
   Position ?userCurrentPosition;
-  var geoLocator = Geolocator();
+  var geoLocator = Geolocator();        //FOR LOCATION PERMISSION
 
   LocationPermission? _locationPermission;
 

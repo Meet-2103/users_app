@@ -19,7 +19,7 @@ class LoginScreen extends StatefulWidget {
 
 class _LoginScreenState extends State<LoginScreen> {
 
-  validataForm(){
+  validataForm(){                                                   //THIS IS USED TO VALIDATE THAT THE EMAIL IS VALID AND OTHER CONSTRAINS WHICH ARE NEEDED
     if(!email.text.contains("@")){
       Fluttertoast.showToast(msg: "Invalid E-mail");
     }
@@ -31,8 +31,8 @@ class _LoginScreenState extends State<LoginScreen> {
     }
   }
   loginUserNow()async{
-    showDialog(context: context,
-        barrierDismissible:false,   //The dialog box will not get closed if a user clicks on the screen
+    showDialog(context: context,                                                                         //WE CAN CALL THS AS A PROCESSING DIALOG CONTROLLER WHICH RETURN A WIDGEY
+        barrierDismissible:false,   //The dialog box will not get closed if a user clicks on the screen  WHICH GIVES A PROGRESS DIALOG BOX
         builder:(BuildContext c){
           return ProgressDialog(message: "Processing,Please Wait",);
         });
